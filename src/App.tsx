@@ -1,11 +1,11 @@
-import 'tailwindcss';
+import React, { ReactElement } from "react"
 
-export default function App() {
+export default function App(): ReactElement {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">
-        Hello World!
-      </h1>
+      <h1>Hello, World!!</h1>
+
+      <h3>✨✨Happy Hacking✨✨</h3>
     </>
   );
 }
