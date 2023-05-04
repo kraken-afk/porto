@@ -13,14 +13,13 @@ export default {
   output: {
     path: resolve(__dirname, 'dist'),
     filename: '[name].[fullhash].js',
-    clean: true,
-    assetModuleFilename: 'assets/[hash][ext]'
+    clean: true
   },
   module: {
     rules: [
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        use: ['style-loader', 'css-loader', 'postcss-loader']
       },
       {
         test: /\.[jt]s(x)?$/,
@@ -50,29 +49,6 @@ export default {
   resolve: {
     alias: {
       '@public/*': resolve(__dirname, './public/')
-    }
-  },
-  optimization: {
-    splitChunks: {
-      chunks: 'all',
-      minSize: 20000,
-      maxSize: 70000,
-      minChunks: 1,
-      maxAsyncRequests: 30,
-      maxInitialRequests: 30,
-      automaticNameDelimiter: '.',
-      enforceSizeThreshold: 50000,
-      cacheGroups: {
-        defaultVendors: {
-          test: /[\\/]node_modules[\\/]/,
-          priority: -10
-        },
-        default: {
-          minChunks: 2,
-          priority: -20,
-          reuseExistingChunk: true
-        }
-      }
     }
   }
 }

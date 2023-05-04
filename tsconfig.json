@@ -3,6 +3,7 @@
     "jsx": "react",
     "baseUrl": ".",
     "rootDir": "./src",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "strictNullChecks": true
   }
 }

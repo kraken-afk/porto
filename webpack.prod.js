@@ -5,6 +5,9 @@ import webpackConfig from './webpack.config.js';
 
 export default merge(webpackConfig, {
   mode: 'production',
+  output: {
+    assetModuleFilename: 'assets/[hash][ext]'
+  },
   module: {
     rules: [
       {
