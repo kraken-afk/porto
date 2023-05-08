@@ -4,6 +4,7 @@
     "baseUrl": ".",
     "rootDir": "./src",
     "esModuleInterop": true,
-    "strictNullChecks": true
-  }
+    "strictNullChecks": true,
+  },
+  "include": [".d.ts", "index.tsx", "App.tsx"]
 }
