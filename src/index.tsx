@@ -23,4 +23,4 @@ root.render(
       <App />
     </div>
   </StrictMode>
-)
+);

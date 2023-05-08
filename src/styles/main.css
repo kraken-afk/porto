@@ -32,11 +32,12 @@ p {
 }
 
 a {
-  @apply underline underline-offset-4 mx-1;
+  @apply underline underline-offset-4 border;
+  border-color: transparent;
 }
 
 a:hover {
-  @apply no-underline border border-dotted border-black dark:border-white;
+  @apply no-underline border-dotted border-black dark:border-white;
 }
 
 .links {
