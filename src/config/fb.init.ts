@@ -1,6 +1,5 @@
 import { initializeApp } from "firebase/app";
 import { Analytics, getAnalytics } from "firebase/analytics";
-import process from 'node:process';
 
 // Import the functions you need from the SDKs you need
 
@@ -11,8 +10,6 @@ import process from 'node:process';
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 
 export default function firebaseInit(): Analytics {
-  require('dotenv').config();
-
   const {
     API_KEY,
     AUTH_DOMAIN,
