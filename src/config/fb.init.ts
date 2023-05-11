@@ -27,8 +27,8 @@ export default function firebaseInit(): Analytics {
     projectId: "blazing-base-d3a51",
     storageBucket: "blazing-base-d3a51.appspot.com",
     messagingSenderId: "798041985405",
-    appId: "1:798041985405:web:8a4116a48f73b327f67c14",
-    measurementId: "G-4GYR3RR9NZ"
+    appId: "1:798041985405:web:353389182e05faf5f67c14",
+    measurementId: "G-WR36E21CBC"
   };
 
   // Initialize Firebase
