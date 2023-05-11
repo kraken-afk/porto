@@ -45,7 +45,9 @@ export default {
       template: resolve(__dirname, './public/index.html')
     }),
     new CleanWebpackPlugin(),
-    new Dotenv()
+    new Dotenv({
+      path: './.env'
+    })
   ],
   resolve: {
     alias: {
