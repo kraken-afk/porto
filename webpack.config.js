@@ -7,7 +7,6 @@ import Dotenv from 'dotenv-webpack';
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
 
 export default {
-  mode: 'development',
   entry: {
     main: './src/index.tsx'
   },

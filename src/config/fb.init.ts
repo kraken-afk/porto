@@ -24,7 +24,7 @@ export default function firebaseInit(): Analytics {
   const firebaseConfig = {
     apiKey: API_KEY,
     authDomain: AUTH_DOMAIN,
-    projectId: PROJECT_ID,
+    projectId: "blazing-base-d3a51",
     storageBucket: STORAGE_BUCKET,
     messagingSenderId: MESSAGE_SENDER_ID,
     appId: APP_ID,
