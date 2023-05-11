@@ -2,6 +2,7 @@ import { resolve } from 'node:path';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import { fileURLToPath } from 'node:url';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+import Dotenv from 'dotenv-webpack';
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
 
@@ -44,7 +45,8 @@ export default {
       filename: 'index.html',
       template: resolve(__dirname, './public/index.html')
     }),
-    new CleanWebpackPlugin()
+    new CleanWebpackPlugin(),
+    new Dotenv()
   ],
   resolve: {
     alias: {
