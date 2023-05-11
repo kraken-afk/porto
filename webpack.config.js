@@ -46,7 +46,7 @@ export default {
     }),
     new CleanWebpackPlugin(),
     new Dotenv({
-      path: './.env'
+      path: resolve(__dirname, '.env')
     })
   ],
   resolve: {
