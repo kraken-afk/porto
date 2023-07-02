@@ -1,7 +1,6 @@
 import React, { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App'
-import firebaseInit from './config/fb.init'
 import './styles/main.css'
 
 const root = createRoot(document.getElementById('root'))
@@ -25,5 +24,3 @@ root.render(
     </div>
   </StrictMode>
 );
-
-firebaseInit();
